@@ -7,7 +7,7 @@ function log() {
   local fname=${BASH_SOURCE[1]##*/}
   /bin/echo "$(date '+%Y-%m-%dT%H:%M:%S') ${PROCNAME} (${fname}:${BASH_LINENO[0]}:${FUNCNAME[1]}) $@" | tee -a ${LOGFILE}
 }
-  mkdir -p /var/log/jamf-cis/
+  mkdir -p /Library/Logs/TechSupport/
   touch ${LOGFILE}
 
 ## Main
